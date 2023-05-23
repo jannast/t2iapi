@@ -1,7 +1,7 @@
 # t2iapi
 
 t2iapi describes a product-independent interface to manipulate devices
-which utilize ISO/IEEE 11073 SDC during verification.
+which utilize ISO/IEEE 11073 SDC during test verification.
 
 It is utilizing gRPC to allow for language-independent implementations
 of the manipulation interface at an appropriate location, be it in the
