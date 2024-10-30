@@ -1,6 +1,6 @@
 /*
 This Source Code Form is subject to the terms of the MIT License.
-Copyright (c) 2022 Draegerwerk AG & Co. KGaA.
+Copyright (c) 2022 - 2024 Draegerwerk AG & Co. KGaA.
 
 SPDX-License-Identifier: MIT
 */
@@ -10,6 +10,7 @@ syntax = "proto3";
 package t2iapi.metric;
 
 import "t2iapi/activation_state/types.proto";
+import "t2iapi/biceps/codedvalue.proto";
 import "t2iapi/metric/types.proto";
 
 option java_package = "com.draeger.medical.t2iapi.metric";
@@ -60,4 +61,12 @@ Ensure that the @ActivationState remains set for as long as the confirmable valu
 message SetActivationStateAndUserConfirmableValueRequest {
     string handle = 1;  // handle of the metric for which the manipulation shall be performed
     activation_state.ComponentActivation activation = 2;  // @ActivationState value to set
+}
+
+/*
+Request to display the given metric with a different pm:Unit than the given one.
+ */
+message DisplayDifferentMetricUnitRequest {
+    string handle = 1; // handle of the metric for which the unit shall be changed
+    CodedValueMsg unit = 2; // the unit which shall be changed
 }
