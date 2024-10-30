@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- manipulation DisplayDifferentMetricUnit for metrics
+- manipulation DisplayMetricWithDifferentUnit for metrics
 - manipulation GetMetricDeterminationMode for metrics
 - manipulation PhysicallyDisconnectRemovableSubsystemAfterPhysicalConnectorProvided
 - manipulation SetActiveModeOfOperation for metrics

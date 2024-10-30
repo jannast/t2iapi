@@ -62,11 +62,3 @@ message SetActivationStateAndUserConfirmableValueRequest {
     string handle = 1;  // handle of the metric for which the manipulation shall be performed
     activation_state.ComponentActivation activation = 2;  // @ActivationState value to set
 }
-
-/*
-Request to display the given metric with a different pm:Unit than the given one.
- */
-message DisplayDifferentMetricUnitRequest {
-    string handle = 1; // handle of the metric for which the unit shall be changed
-    t2iapi.biceps.CodedValueMsg unit = 2; // the unit which shall be changed
-}
