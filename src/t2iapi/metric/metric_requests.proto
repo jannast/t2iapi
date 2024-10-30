@@ -10,7 +10,6 @@ syntax = "proto3";
 package t2iapi.metric;
 
 import "t2iapi/activation_state/types.proto";
-import "t2iapi/biceps/codedvalue.proto";
 import "t2iapi/metric/types.proto";
 
 option java_package = "com.draeger.medical.t2iapi.metric";
