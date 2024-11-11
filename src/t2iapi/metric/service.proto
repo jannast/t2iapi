@@ -1,6 +1,6 @@
 /*
 This Source Code Form is subject to the terms of the MIT License.
-Copyright (c) 2022, 2024 Draegerwerk AG & Co. KGaA.
+Copyright (c) 2022 - 2024 Draegerwerk AG & Co. KGaA.
 
 SPDX-License-Identifier: MIT
 */
@@ -128,7 +128,7 @@ service MetricService {
       returns (t2iapi.metric.GetMetricDeterminationMode);
 
   /*
-  Request for the metric with the given handle to display it with a different Unit than given in the respective
+  Request for the metric with the given handle to display it with a different pm:Unit than given in the respective
   descriptor.
    */
   rpc DisplayMetricWithDifferentUnit (BasicHandleRequest)
